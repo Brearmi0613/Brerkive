@@ -1,0 +1,150 @@
+
+
+        body{
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url(./resources/Imagens/papel-de-parede.jpg);
+            zoom: 90%;
+            
+        }
+        .container{
+            display: grid;
+            grid-template-rows: 50px 200px 300px 50px 50px 50px 50px;
+            grid-template-columns: 300px 200px 100px;
+            gap: 20px;
+            height: 750px;
+            margin-top: 50px;
+        }
+        
+        .nav{
+            display: grid;
+            grid-column: span 4;
+            grid-row: 1;
+            font-family: "Fraunces", serif;
+            font-size: medium;
+            font-weight: 800;
+            
+            
+
+        }
+        .nav-links{
+            list-style-type: none;
+            text-decoration: none;
+            display: flex;
+            background-color: #622B14;
+            height: 50px;
+            border-radius: 25px;
+            width: 555px;
+            justify-content: center;
+            align-items: center;
+            font-style: italic;
+            
+            
+        }
+        a:hover{
+            font-style: normal;
+        }
+
+        .nav-item a{
+            margin: 20px;
+            text-decoration: none;
+            color: azure;
+            font-weight: 700;
+            
+        }
+       
+        .profile-pic{
+            grid-column: 4;
+            border-radius: 50px;
+        }
+
+        .header-image{
+            grid-row: 2;
+            grid-column: span 4;
+            border-radius: 25px;
+                       
+        }
+        
+        h3{
+            font-style: italic;
+        }
+
+        .bio{
+            grid-row: 3;
+            grid-column: span 4;
+            width: 630px;
+            background-color: #622B14;
+            border-radius: 25px;
+            padding-left: 20px;
+            padding-right: 20px;
+            color: azure;
+            font-family: "Fraunces", serif;
+            font-size: medium;
+            font-style: italic;
+            font-variation-settings:
+                            "SOFT" 0,
+                            "WONK" 1;
+            
+        }
+        h4{
+            font-style: italic;
+        }
+
+        p{
+                font-style: normal;
+            
+        }
+        .socials{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            
+        }
+
+        button{
+            background-color: #978F66;
+            border-color: #978F66;
+            width: 5rem;
+            border: 5px solid;
+            border-radius: 15px;
+            color: azure;
+            border-style: none;
+        }
+
+        button a {
+            text-decoration: none;
+            text-align: center;
+            color: azure;
+            font-family: "Instrument Sans", sans-serif;
+            font-weight: 300;
+            font-variation-settings:
+                        "wdth" 100;
+        }
+
+        .soon{
+            display: flex;
+            justify-content: center;
+            text-decoration: underline;
+            color: #E4D6A9;
+        }
+        
+        .right-section{
+            grid-row: 4/ span 3;
+        }
+
+        .left-section{
+            grid-row: 4;
+            grid-column: span 3;
+            
+        }
+        
+        @media (max-width: 600px){
+            
+            .container{
+                margin-top: 200px;
+                width: 330px;
+               
+            }
+        }
